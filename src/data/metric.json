@@ -1,0 +1,23 @@
+{
+  "eventsDataSource": {
+    "type": "localFilePath",
+    "config": {
+      "path": "data/events.json"
+    }
+  },
+  "filter": {
+    "conditions": [
+      {
+        "criterions": [{
+          "field": "amountPaid",
+          "value": 5,
+          "operator": "LargerThan"
+        }
+      ]}
+    ]
+  },
+  "aggregationMethod": {
+    "operator": "average",
+    "field": "amountPaid"
+  }
+}
